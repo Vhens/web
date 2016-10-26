@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>中图</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <link href="../../../../common/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="res/css/lists.css" rel="stylesheet" type="text/css" />
+    <script src="../../../../common/js/zepto-1.16.min.js"></script>
+    <script src="../../../../common/js/default.js"></script>
+    <script src="res/js/zepto.js"></script>
+</head>
+
+<body>
+    <!--列表-->
+
+    <section class="stn-lists stn-thelists" id="thelist">
+        <ul>
+            <li>
+                <a href="#">
+                    <table>
+                        <tr>
+                            <td class="s-img"><img src="res/img/img1.jpg" /></td>
+                        </tr>
+                    </table>
+                    <p class="p-name fz22">美国原装进口精选优质开心果(奶油味)218gx2美国原装进口精选优质开心果(奶油味)218gx2</p>
+                    <p class="p-money fz32">￥49.00<span class="fz24">102.70</span></p>
+                    <p class="p-num fz24">立赚10元<span>售&nbsp;6666&nbsp;笔</span></p>
+                </a>
+                <a class="a-cart" href="#"><img src="res/img/cart.png" /></a>
+            </li>
+            <li>
+                <a href="#">
+                    <table>
+                        <tr>
+                            <td class="s-img"><img src="res/img/img2.jpg" /></td>
+                        </tr>
+                    </table>
+                    <p class="p-name fz22">美国原装进口精选优质开心果(奶油味)218gx2美国原装进口精选优质开心果(奶油味)218gx2</p>
+                    <p class="p-money fz32">￥49.00<span class="fz24">102.70</span></p>
+                    <p class="p-num fz24">立赚10元<span>售&nbsp;6666&nbsp;笔</span></p>
+                </a>
+                <a class="a-cart" href="#"><img src="res/img/cart.png" /></a>
+            </li>
+            <li>
+                <a href="#">
+                    <table>
+                        <tr>
+                            <td class="s-img"><img src="res/img/img1.jpg" /></td>
+                        </tr>
+                    </table>
+                    <p class="p-name fz22">美国原装进口精选优质开心果(奶油味)218gx2美国原装进口精选优质开心果(奶油味)218gx2</p>
+                    <p class="p-money fz32">￥49.00<span class="fz24">102.70</span></p>
+                    <p class="p-num fz24">立赚10元<span>售&nbsp;6666&nbsp;笔</span></p>
+                </a>
+                <!--<a class="a-cart" href="#"><img src="res/img/cart.png" /></a>-->
+            </li>
+            <li>
+                <a href="#">
+                    <table>
+                        <tr>
+                            <td class="s-img"><img src="res/img/img2.jpg" /></td>
+                        </tr>
+                    </table>
+                    <p class="p-name fz22">美国原装进口精选优质开心果(奶油味)218gx2美国原装进口精选优质开心果(奶油味)218gx2</p>
+                    <p class="p-money fz32">￥49.00<span class="fz24">102.70</span></p>
+                    <p class="p-num fz24">立赚10元<span>售&nbsp;6666&nbsp;笔</span></p>
+                </a>
+                <!--<a class="a-cart" href="#"><img src="res/img/cart.png" /></a>-->
+            </li>
+        </ul>
+        <div class="clr"></div>
+    </section>
+
+
+    <script>
+    /*图片图片尺寸脚本,大图缩小,小图不放大,定义尺寸,居中靠css*/
+function imgZoomControl() {
+    var oImgWraps = $('#thelist li .s-img'),
+        nWidth = oImgWraps.eq(0).width();
+    oImgWraps.find('img').css({
+        'max-width': nWidth,
+        'max-height': nWidth
+    })
+}
+
+        $(function() {
+            imgZoomControl();
+        })
+    </script>
+    <!--列表-end-->
+</body>
+
+</html>
